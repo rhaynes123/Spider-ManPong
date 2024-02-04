@@ -14,6 +14,8 @@
 		55D1A0732B6FE35300B54037 /* Spider_Man_PongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D1A0722B6FE35300B54037 /* Spider_Man_PongTests.swift */; };
 		55D1A07D2B6FE35300B54037 /* Spider_Man_PongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D1A07C2B6FE35300B54037 /* Spider_Man_PongUITests.swift */; };
 		55D1A07F2B6FE35300B54037 /* Spider_Man_PongUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D1A07E2B6FE35300B54037 /* Spider_Man_PongUITestsLaunchTests.swift */; };
+		55D1A08C2B6FE4C900B54037 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55D1A08B2B6FE4C900B54037 /* GameScene.sks */; };
+		55D1A08E2B6FE4FE00B54037 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D1A08D2B6FE4FE00B54037 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		55D1A0782B6FE35300B54037 /* Spider-Man PongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spider-Man PongUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D1A07C2B6FE35300B54037 /* Spider_Man_PongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spider_Man_PongUITests.swift; sourceTree = "<group>"; };
 		55D1A07E2B6FE35300B54037 /* Spider_Man_PongUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spider_Man_PongUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55D1A08B2B6FE4C900B54037 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		55D1A08D2B6FE4FE00B54037 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				55D1A0632B6FE35100B54037 /* ContentView.swift */,
 				55D1A0652B6FE35200B54037 /* Assets.xcassets */,
 				55D1A0672B6FE35200B54037 /* Preview Content */,
+				55D1A08B2B6FE4C900B54037 /* GameScene.sks */,
+				55D1A08D2B6FE4FE00B54037 /* GameScene.swift */,
 			);
 			path = "Spider-Man Pong";
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55D1A0692B6FE35200B54037 /* Preview Assets.xcassets in Resources */,
+				55D1A08C2B6FE4C900B54037 /* GameScene.sks in Resources */,
 				55D1A0662B6FE35200B54037 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D1A08E2B6FE4FE00B54037 /* GameScene.swift in Sources */,
 				55D1A0642B6FE35100B54037 /* ContentView.swift in Sources */,
 				55D1A0622B6FE35100B54037 /* Spider_Man_PongApp.swift in Sources */,
 			);
