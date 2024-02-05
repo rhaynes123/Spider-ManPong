@@ -11,6 +11,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate {
     
     private var pauseLabel : SKLabelNode = SKLabelNode()
     private var paddle = SKSpriteNode()
+    private var ceiling = SKSpriteNode()
     private var ball = SKSpriteNode()
     
     private func setUpBall() {
@@ -24,10 +25,21 @@ class GameScene : SKScene, SKPhysicsContactDelegate {
     private func setUpPaddle() {
         paddle = self.childNode(withName: "paddle") as! SKSpriteNode
         paddle.physicsBody?.isDynamic = false
+        ceiling = self.childNode(withName: "ceiling") as! SKSpriteNode
+        ceiling.physicsBody?.isDynamic = false
     }
     
     private func setUpLabel() {
         pauseLabel = self.childNode(withName: "pause") as! SKLabelNode
+    }
+    
+    private func endGame(){
+        guard let overScene = SKScene(fileNamed: "EndGame") as? EndGame else {
+            print("Failed to load EndGame.sks")
+            abort()
+        }
+        overScene.scaleMode = .aspectFill
+        self.view?.presentScene(overScene)
     }
     
     private func handleTouches(_ touches: Set<UITouch>) {
@@ -58,5 +70,10 @@ class GameScene : SKScene, SKPhysicsContactDelegate {
     }
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         handleTouches(touches)
+    }
+    override func update(_ currentTime: TimeInterval) {
+        if self.ball.position.y <= -300 {
+            self.endGame()
+        }
     }
 }
